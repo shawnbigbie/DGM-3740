@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="Cabot Cruises">
+  <meta name="keywords" content="Cabot Cruises">
+  <meta name="author" content="Shawn Bigbie">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Home - Cabot Cruises</title>
+
+  <link rel="stylesheet" href="../css/homeStyle.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body style="width:100%">
+  <div id="headerwrapper">
+    <header class="clearfix">
+      <img class="logo">
+        <img src="images/logo1x.png" width="180" srcset="images/logo1x.png 1x, images/logo2x.png 2x, images/logo3x.png 3x" alt="logo">
+    </img>
+      <a href="tel:800-555-1234" id="phonenumber">1-800-555-1234</a>
+    </header>
+  </div>
+
+  <div id="navwrapper">
+    <ul>
+      <nav class="topnav" id="myTopnav">
+        <li><a href="home.html" class="active">Home</a></li>
+        <li><a href="#">Cruises</a></li>
+        <div class="dropdown">
+          <button class="dropbtn">Agents
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <li><a href="#">Agent One</a></li>
+            <li><a href="#">Agent Two</a></li>
+          </div>
+        </div>
+        <li><a href="#">Book</a></li>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+        <div class="search-container">
+          <form action="#">
+            <input type="search" placeholder="Search.." name="search">
+            <button type="submit"><i class="fa fa-search"></i></button>
+          </form>
+        </div>
+      </nav>
+    </ul>
+  </div>
+
+  <script>
+    /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+  </script>
+</body>
+</html>
