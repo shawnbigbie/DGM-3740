@@ -1,65 +1,239 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="utf-8">
-  <meta name="description" content="Cabot Cruises">
-  <meta name="keywords" content="Cabot Cruises">
-  <meta name="author" content="Shawn Bigbie">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  <title>Home - Cabot Cruises</title>
-
-  <link rel="stylesheet" href="../css/homeStyle.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Cabot Cruises">
+    <meta name="keywords" content="Cabot Cruises, Cruises, DGM 3740, Vacations, Shawn Bigbie">
+    <meta name="author" content="Shawn Bigbie">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    
+    <title>Home - Cabot Cruises</title>
+    <link rel="stylesheet" href="../styles/style.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Arimo&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="./slick/slick.css">
+    <link rel="stylesheet" href="./slick/slick-theme.css">
 </head>
 
-<body style="width:100%">
-  <div id="headerwrapper">
-    <header class="clearfix">
-      <img class="logo">
-        <img src="images/logo1x.png" width="180" srcset="images/logo1x.png 1x, images/logo2x.png 2x, images/logo3x.png 3x" alt="logo">
-    </img>
-      <a href="tel:800-555-1234" id="phonenumber">1-800-555-1234</a>
-    </header>
-  </div>
+<!------------>
+<!-- BODY -->
+<!------------>
+<body>
+    <div class="wrapper">
+        <!------------>
+        <!-- HEADER -->
+        <!------------>
+        <header>
+            <img src="./images/logo1x.png" srcset="./images/logo1x.png 1x, ./images/logo2x.png 2x, ./images/logo3x.png 3x" alt="CabotCruises Logo">
+            <a href="tel:555-555-5555">800-555-1234</a>
+        </header>
 
-  <div id="navwrapper">
-    <ul>
-      <nav class="topnav" id="myTopnav">
-        <li><a href="home.html" class="active">Home</a></li>
-        <li><a href="#">Cruises</a></li>
-        <div class="dropdown">
-          <button class="dropbtn">Agents
-            <i class="fa fa-caret-down"></i>
-          </button>
-          <div class="dropdown-content">
-            <li><a href="#">Agent One</a></li>
-            <li><a href="#">Agent Two</a></li>
-          </div>
-        </div>
-        <li><a href="#">Book</a></li>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
-        <div class="search-container">
-          <form action="#">
-            <input type="search" placeholder="Search.." name="search">
-            <button type="submit"><i class="fa fa-search"></i></button>
-          </form>
-        </div>
-      </nav>
-    </ul>
-  </div>
+        <!------------->
+        <!--   NAV   -->
+        <!------------->
+        <nav class="clearfix">
+            <button id="hamburgerBtn">&#9776;</button>
+            <ul id="primaryNav" class="closed">
+                <li class="active"><a>Home</a></li>
+                <li><a href="#">Cruises</a></li>
+                <li><a href="#">Agents</a>
+                    <ul>
+                        <li><a href="#">View Agents</a></li>
+                        <li><a href="#">Contact Agents</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Book</a></li>
+            </ul>
 
-  <script>
-    /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
-    function myFunction() {
-      var x = document.getElementById("myTopnav");
-      if (x.className === "topnav") {
-        x.className += " responsive";
-      } else {
-        x.className = "topnav";
-      }
-    }
-  </script>
+            <form action="#">
+                <input type="search" placeholder="Search..." name="search">
+                <button id="search" type="submit"><i class="fa fa-search"></i></button>
+            </form>
+        </nav>
+
+        <!------------------>
+        <!-- IMAGE SLIDER -->
+        <!------------------>
+        <main class="mySlider">
+            <picture>
+                <source srcset="images/Image1-large.jpg" media="(min-width: 46.8rem)">
+                <img src="images/Image1-small.png" alt="Cabot Cruises Silder Image">
+            </picture>
+
+            <picture>
+                <source srcset="images/Image2-large.jpg" media="(min-width: 46.8rem)">
+                <img src="images/Image2-small.png" alt="Cabot Cruises Silder Image">
+            </picture>
+
+            <picture>
+                <source srcset="images/Image3-large.jpg" media="(min-width: 46.8rem)">
+                <img src="images/Image3-small.png" alt="Cabot Cruises Silder Image">
+            </picture>
+
+            <picture>
+                <source srcset="images/Image4-large.jpg" media="(min-width: 46.8rem)">
+                <img src="images/Image4-small.png" alt="Cabot Cruises Silder Image">
+            </picture>
+        </main>
+
+        <!------------>
+        <!--  BLOG  -->
+        <!------------>
+        <section class="blog">
+            <h2>Recent Blog Articles</h2>
+            <div class="articles">
+                <div class="article covid">
+                    <div class="articleTitle">
+                    <p>
+                        Covid-19 Update
+                    </p>
+                    </div>
+                    <div class="date">
+                        <p>July 1, 2020</p>
+                    </div>
+                </div>
+
+                <div class="article topTen">
+                    <div class="articleTitle">
+                    <p>
+                        Top 10 Vacations
+                    </p>
+                    </div>
+                    <div class="date">
+                        <p>June 1, 2020</p>
+                    </div>
+                </div>
+
+                <div class="article discount">
+                    <div class="articleTitle">
+                    <p>
+                        10% off Tickets
+                    </p>
+                    </div>
+                    <div class="date">
+                        <p>May 1, 2018</p>
+                    </div>
+                </div>
+
+                <div class="article closed">
+                    <div class="articleTitle">
+                    <p>
+                        Temporarily Closed
+                    </p>
+                    </div>
+                    <div class="date">
+                        <p>April 1, 2018</p>
+                    </div>
+                </div>
+            </div>  
+        </section>
+
+        <!------------>
+        <!-- FOOTER -->
+        <!------------>
+        <footer>
+            <div class="footWrapper">
+                <div class="contact">
+                    <h2>Contact Us</h2>
+                    <br>
+                    <p>
+                        <a href="https://goo.gl/maps/ro2NGJ2Yy4sc5ZPk6">
+                            Cabot Cruises <br>
+                            800 W University Pkwy <br>
+                            Orem, UT 84058
+                        </a>
+                    </p>
+                    <br>
+                    <p>
+                        Call Us At <br>
+                        <a href="tel:800-555-1234">
+                            Phone: 800-555-1234
+                        </a>
+                    </p>
+                    <br>
+                    <p>
+                        Hours of Operation: <br>
+                        Monday - Friday 8am - 5pm
+                    </p>
+                </div>
+                <div class="why">
+                    <h2>Why Cabot Cruises</h2>
+                    <br>
+                    <p>
+                        Cabot Cruises is a travel agency that provides the best cruise deals on the web. We can help you with all inclusive vacations with our discounted cruises.
+                    </p>
+                </div>
+                <div class="news">
+                    <h2>Newsletter</h2>
+                    <br>
+                    <p>
+                        Subscribe to our email list and stay updated with our hottest offers and latest specials.
+                    </p>
+                    <br>
+                    <form action="#">
+                        <input type="text" placeholder="Email..." required>
+                        <button type="submit" class="subscribe"> Subscribe </button>
+                    </form>
+                   
+                </div>
+            </div>
+        </footer>
+
+        <div class="socials">
+            <a class="facebook fa fa-facebook-square fa-3x"></a>
+            <a class="fa fa-youtube-square fa-3x"></a>
+            <a class="fa fa-instagram fa-3x"></a>
+            <a class="fa fa-pinterest-square fa-3x"></a>
+            <a class="fa fa-twitter-square fa-3x"></a>
+        </div>
+
+        <div class="myInfo">
+            <p>©2021 <a href="https://shawnbigbie.com" target="_blank">Shawn Bigbie</a></p>
+
+        </div>
+    </div>
+
+    <!---------------->
+    <!-- JavaScript -->
+    <!---------------->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "EntertainmentBusiness",
+            "name": "Cabot Cruises",
+            "telephone": "800-555-1234",
+            "openingHours": "Mo,Tu,We,Th 09:00-12:00",
+            "image": "https://www.martide.com/en/blog/seafarers/content/images/2020/10/cruise-ship-at-sunset.jpg",
+            "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "800 W University Pkwy",
+            "addressLocality": "Orem",
+            "addressRegion": "UT",
+            "postalCode": "84058",
+            "addressCountry": "US"
+            } 
+        }
+    </script>
+
+    <script src="./menuToggle.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="./slick/slick.min.js"></script>
+    
+    <script>
+
+        $(document).ready(function(){
+            $('.mySlider').slick({
+                autoplay: true,
+                dots: true,
+                arrows: false,
+                cssEase: 'ease-out',
+                speed: 3000,
+                autoplaySpeed: 5000
+            })
+        })
+    </script>
 </body>
 </html>

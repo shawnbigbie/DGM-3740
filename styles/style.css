@@ -1,0 +1,469 @@
+header {
+  padding: 0 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 4.4rem;
+}
+
+header h1 {
+  padding: 10px 0;
+}
+
+header h1 span {
+  font-weight: 100;
+}
+
+header img {
+  height: 120px;
+  padding: 10px;
+}
+
+header a {
+  margin-left: auto;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  text-decoration: none;
+  color: #0094ff;
+  margin-bottom: 1rem;
+  font-size: 18px;
+}
+
+@media only screen and (min-width: 600px) {
+  header {
+    margin-top: 0;
+  }
+}
+
+nav {
+  background-color: #000;
+  position: absolute;
+  margin: 0 -2000px;
+  padding: 0 2000px;
+  top: 0;
+  width: 100%;
+  z-index: 99;
+  margin-bottom: 10px;
+}
+
+nav button {
+  font-size: 3rem;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.2);
+  border: solid 1px rgba(0, 0, 0, 0.3);
+  width: 4rem;
+  margin: 3px 2%;
+  border-radius: 5px;
+}
+
+nav ul.closed {
+  display: none;
+}
+
+nav ul li a {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  padding: 1rem 2%;
+  border-bottom: solid 1px rgba(0, 0, 0, 0.3);
+}
+
+nav ul li ul li a {
+  padding-left: 8%;
+}
+
+nav ul li.active a {
+  background-color: #0076cc;
+}
+
+nav form {
+  float: right;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+nav form input {
+  margin: 0.5rem 0;
+  padding: 0.8rem;
+  border: none;
+  float: right;
+}
+
+nav form #search {
+  float: right;
+  border: none;
+  margin-left: -1px;
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 600px) {
+  nav {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  nav ul.closed {
+    display: block;
+  }
+  nav form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  nav button {
+    display: none;
+  }
+  nav #search {
+    display: block;
+  }
+  nav ul {
+    margin-left: 2%;
+  }
+  nav ul li {
+    float: left;
+    list-style-type: none;
+  }
+  nav ul li a {
+    border: none;
+    border-right: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 1.25rem 1.5rem;
+    -webkit-transition: 0.3s linear;
+    transition: 0.3s linear;
+    -webkit-transition: background 0.3s linear;
+  }
+  nav ul li a:hover {
+    background-color: #0076cc;
+  }
+  nav ul li ul {
+    left: -999em;
+    z-index: 99;
+    background-color: #1a1a1a;
+    position: absolute;
+    width: 16rem;
+  }
+  nav ul li:hover ul {
+    left: auto;
+    margin-left: 0;
+  }
+  nav ul li ul li {
+    float: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  }
+}
+
+.mySlider {
+  width: 100%;
+}
+
+.mySlider img {
+  width: 100%;
+}
+
+.blog {
+  margin-top: 2rem;
+}
+
+.blog h2 {
+  padding: 0 2rem;
+  color: #0094ff;
+}
+
+.blog .articles {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.blog .articles .article {
+  height: 20rem;
+  width: 20rem;
+  margin: auto;
+  margin-top: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.blog .articles .article .articleTitle {
+  background-color: black;
+  padding: 1rem;
+  text-align: center;
+  color: white;
+}
+
+.blog .articles .article .date {
+  background-color: black;
+  padding: 0.5rem;
+  text-align: center;
+  color: white;
+}
+
+.blog .articles .covid {
+  background-image: url(../template/images/COVID-19.png);
+  background-position: center;
+  opacity: 75%;
+  -webkit-transition: opacity .25s ease-in-out;
+  transition: opacity .25s ease-in-out;
+}
+
+.blog .articles .topTen {
+  background-image: url(../template/images/top10.jpg);
+  background-position: center;
+  opacity: 75%;
+  -webkit-transition: opacity .25s ease-in-out;
+  transition: opacity .25s ease-in-out;
+}
+
+.blog .articles .discount {
+  background-image: url(../template/images/discount.jpeg);
+  background-position: center;
+  opacity: 75%;
+  -webkit-transition: opacity .25s ease-in-out;
+  transition: opacity .25s ease-in-out;
+}
+
+.blog .articles .closed {
+  background-image: url(../template/images/closed.jpeg);
+  background-position: center;
+  opacity: 75%;
+  -webkit-transition: opacity .25s ease-in-out;
+  transition: opacity .25s ease-in-out;
+}
+
+.blog .articles .closed:hover {
+  opacity: 100%;
+  cursor: pointer;
+}
+
+.blog .articles .covid:hover {
+  opacity: 100%;
+  cursor: pointer;
+}
+
+.blog .articles .discount:hover {
+  opacity: 100%;
+  cursor: pointer;
+}
+
+.blog .articles .topTen:hover {
+  opacity: 100%;
+  cursor: pointer;
+}
+
+footer {
+  background-color: #000;
+  margin: 2rem -2000px;
+  padding: 0px 2000px;
+  color: white;
+}
+
+footer .footWrapper {
+  margin-top: 2rem;
+  padding: 0 2rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+footer .footWrapper h2 {
+  color: white;
+}
+
+footer .footWrapper .contact {
+  -ms-flex-preferred-size: 0;
+      flex-basis: 0;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  padding: 1rem .5rem;
+  color: #0094ff;
+  max-width: 250px;
+}
+
+footer .footWrapper .news {
+  -ms-flex-preferred-size: 0;
+      flex-basis: 0;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  padding: 1rem .5rem;
+  color: #0094ff;
+}
+
+footer .footWrapper .news p {
+  padding-right: 60px;
+}
+
+footer .footWrapper .why {
+  -ms-flex-preferred-size: 0;
+      flex-basis: 0;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  padding: 1rem .5rem;
+  color: #0094ff;
+}
+
+footer .footWrapper .why p {
+  padding-right: 60px;
+}
+
+footer .footWrapper a {
+  text-decoration: none;
+  color: #0094ff;
+}
+
+footer input {
+  margin: 0.5rem 0;
+  padding: 0.8rem 10px;
+  width: 18rem;
+  border: none;
+  border-radius: 10px;
+}
+
+footer button {
+  display: block;
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  color: white;
+  background-color: #0094ff;
+  border: solid 1px white;
+  width: 18rem;
+  border-radius: 5px;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 600px) {
+  footer .footWrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+}
+
+.socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.socials a {
+  padding: 1rem;
+  cursor: pointer;
+}
+
+.socials a:nth-child(1):hover {
+  color: #1877F2;
+}
+
+.socials a:nth-child(2):hover {
+  color: #FF0000;
+}
+
+.socials a:nth-child(3):hover {
+  color: #d024d6;
+}
+
+.socials a:nth-child(4):hover {
+  color: #E6001A;
+}
+
+.socials a:nth-child(5):hover {
+  color: #1DA1F2;
+}
+
+.myInfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 2rem;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  overflow-x: hidden;
+  width: 100%;
+  font-family: 'Arimo', Arial, Helvetica, sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  margin: 0 auto;
+  max-width: 96rem;
+}
+
+header {
+  padding: 0 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 4.4rem;
+}
+
+header h1 {
+  padding: 10px 0;
+}
+
+header h1 span {
+  font-weight: 100;
+}
+
+header img {
+  height: 120px;
+  padding: 10px;
+}
+
+header a {
+  margin-left: auto;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  text-decoration: none;
+  color: #0094ff;
+  margin-bottom: 1rem;
+  font-size: 18px;
+}
+
+@media only screen and (min-width: 600px) {
+  header {
+    margin-top: 0;
+  }
+}
+/*# sourceMappingURL=style.css.map */
